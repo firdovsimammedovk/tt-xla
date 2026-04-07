@@ -58,17 +58,17 @@ html_last_updated_fmt = "%b %d, %Y"
 
 html_baseurl = os.environ.get(
     "DOCS_HTML_BASEURL",
-    "https://docs.tenstorrent.com/tt-xla",
+    "https://firdovsimammedovk.github.io/tt-xla",
 ).rstrip("/")
 
 _docs_version = os.environ.get("DOCS_VERSION", "latest").strip()
 _docs_site_base = os.environ.get(
     "DOC_SITE_BASE_URL",
-    "https://tenstorrent.github.io/tt-xla",
+    "https://firdovsimammedovk.github.io/tt-xla",
 ).rstrip("/")
 
 html_context = {
-    "logo_link_url": "https://docs.tenstorrent.com/",
+    "logo_link_url": "https://firdovsimammedovk.github.io/tenstorrent",
     "versions": get_published_versions(Path(__file__)),
     "current_version": _docs_version,
     "docs_site_base": _docs_site_base,
