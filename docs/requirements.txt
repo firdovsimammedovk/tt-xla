@@ -1,0 +1,4 @@
+sphinx>=7,<9
+sphinx_rtd_theme
+sphinx_sitemap
+myst_parser

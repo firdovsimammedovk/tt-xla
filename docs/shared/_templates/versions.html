@@ -1,0 +1,23 @@
+{% if versions %}
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        Version: {{ current_version }}
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>{{ _('Versions') }}</dt>
+            {% for version in versions %}
+            <dd>
+              {% if version == 'latest' %}
+              <a href="{{ docs_site_base }}/index.html">{{ version }}</a>
+              {% else %}
+              <a href="{{ docs_site_base }}/{{ version }}/index.html">{{ version }}</a>
+              {% endif %}
+            </dd>
+            {% endfor %}
+        </dl>
+        <br>
+    </div>
+</div>
+{% endif %}
