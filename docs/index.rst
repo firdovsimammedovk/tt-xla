@@ -3,7 +3,7 @@ TT-XLA documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting started
+   :caption: Get started
 
    src/getting_started
    src/getting_started_debugging
